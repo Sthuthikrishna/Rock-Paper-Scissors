@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <h1>
+            <span>Rock</span>
+            <span>Paper</span>
+            <span>Scissors</span>
+        </h1>
+        <div class="score-container">
+            <h4>Your Score</h4>
+            <p id="score">0</p>
+        </div>
+    </div>
+        <div class="main" id="main">
+            <button class="btn paper-btn pick" data-choice="paper"><span class="wrapper">
+                <img src="images/hand-paper.svg" alt=""></button>
+        </span>
+
+            <button class="btn scissors-btn pick" data-choice="scissors"><span class="wrapper">
+                <img src="images/hand-scissors.svg" alt=""></button>
+        </span>
+            <button class="btn rock-btn pick" data-choice="rock"> <span class="wrapper">
+                <img src="images/hand-rock.svg" alt=""></button>
+        </span>
+        </div>
+
+        <div class="rules-container" id="modal">
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you will count off "rock,paper, scissors, shoot" or just "rock,paper, scissors."</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+                <li>If both players lay down the same hand, each player lays down another hand.</li>
+
+            </ul>
+            <button class="close" id="close"><img src="images/icons8-close-window-32.png" alt=""></button>
+        </div>
+        <div class="rules">
+            <button id="open">Rules</button>
+        </div>
+    </div>
+    <div class="selection" id="selection">
+        <div>
+            <h2>You Picked</h2>
+            <button class="btn " id="user_select"><span class="wrapper">
+                <img src="images/hand-paper.svg" alt=""></button>
+        </span>
+        </div>
+        <div>
+            <p class="result">You <span id="winner">Win</span> </p>
+            <button class="reset" id="tryAgain">Play Again</button>
+        </div>
+        <div>
+            <h2>PC Picked</h2>
+            <button class="btn " id="pc_select"><span class="wrapper">
+                <img src="images/hand-paper.svg" alt=""></button>
+        </span>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
